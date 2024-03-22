@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
+    <title>YAML Genie</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo-container">
+          <img src="./assets/genie.png" />
+          <h1>YAML Genie</h1>
+        </div>
+      </header>
+      <div class="textarea-container">
+        <div id="codeEditor" class="code-editor"></div>
+        <div class="copy-container">
+          <img id="copy-btn" src="./assets/copy.png" />
+          <textarea id="result" readonly> </textarea>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button id="dashify-btn">DASHIFY</button>
+        <button id="syntax-btn">SYNTAXIFY</button>
+        <button id="json-btn">JSONIFY</button>
+        <button id="format-btn">FORMATIFY</button>
+        <button id="clear">CLEAR</button>
+      </div>
+    </main>
+    <script type="module" src="app.js"></script>
+<!-- CodeMirror JavaScript Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+
+<!-- YAML syntax highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/yaml/yaml.min.js"></script>
+
+  </body>
+</html>
